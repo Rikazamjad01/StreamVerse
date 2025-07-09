@@ -8,7 +8,7 @@ const testimonials = [
     {
         name: "Sarah Mitchell",
         title: "HR Executive at Tech",
-        image: "/sarah.svg",
+        image: "/Sarah.svg",
         rating: 5,
         feedback:
         "As a fitness coach, I need reliable streaming quality. FLOWLIVE delivers that and more with the ability to interact with comments from all platforms in one dashboard.",
@@ -16,7 +16,7 @@ const testimonials = [
     {
         name: "John Doe",
         title: "Marketing Lead at StreamCo",
-        image: "/sarah.svg",
+        image: "/Sarah.svg",
         rating: 4,
         feedback:
         "We increased engagement 3x after using FLOWLIVE. It's intuitive and powerful!",
@@ -24,7 +24,7 @@ const testimonials = [
     {
         name: "Emily Davis",
         title: "Content Creator",
-        image: "/sarah.svg",
+        image: "/Sarah.svg",
         rating: 5,
         feedback:
         "No more switching tabs! FLOWLIVE saved me hours every week.",
@@ -32,7 +32,7 @@ const testimonials = [
         {
         name: "John Doe",
         title: "Marketing Lead at StreamCo",
-        image: "/sarah.svg",
+        image: "/Sarah.svg",
         rating: 4,
         feedback:
         "We increased engagement 3x after using FLOWLIVE. It's intuitive and powerful!",
@@ -40,7 +40,7 @@ const testimonials = [
     {
         name: "Emily Davis",
         title: "Content Creator",
-        image: "/sarah.svg",
+        image: "/Sarah.svg",
         rating: 5,
         feedback:
         "No more switching tabs! FLOWLIVE saved me hours every week.",
