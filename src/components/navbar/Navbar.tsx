@@ -13,7 +13,7 @@ const Navbar = () => {
                     <p>Stream<span className='text-[var(--Primary)]' style={{ fontWeight: 'var(--H1-weight)' }}>VERSE</span></p>
                 </div>
                 <div>
-                    <ul className='md:flex hidden text-[18px]'>
+                    <ul className='md:flex hidden text-[18px] text-white'>
                         <li className='py-3 lg:px-5 md:px-3 px-2 cursor-pointer hover:text-[var(--Primary)]'>Home</li>
                         <li className='py-3 lg:px-5 md:px-3 px-2 cursor-pointer hover:text-[var(--Primary)]'>About us</li>
                         <li className='py-3 lg:px-5 md:px-3 px-2 cursor-pointer hover:text-[var(--Primary)]'>How it Works</li>
