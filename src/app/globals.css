@@ -1,8 +1,44 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Colors */
+  --Primary: #C3EB4D;
+  --Placeholder: #1E1F1E;
+  --onPlaceholder: #2E2E2D;
+  --Outline: #3D3D3C;
+  --Heading: #FCFCFA;
+  --Paragraph: #CCCCCB;
+  --Disable: #80807E;
+  --Background: #141414;
+
+/* Typography with clamp() for responsive design */
+  --H1-size: clamp(2.5rem, 6vw, 3.75rem);        /* 40px - 60px */
+  --H1-weight: 700;
+  --H1-line-height: clamp(2.75rem, 6vw, 4.5rem); /* 44px - 72px (close to 60 or 90 if needed) */
+
+  --H2-size: clamp(2rem, 5vw, 2.5rem);          /* 32px - 40px */
+  --H2-weight: 700;
+  --H2-line-height: clamp(2.25rem, 5vw, 3rem);   /* 36px - 48px */
+
+  --H3-size: clamp(1.5rem, 4vw, 2rem);           /* 24px - 32px */
+  --H3-weight: 600;
+  --H3-line-height: clamp(2rem, 4.5vw, 2.75rem); /* 32px - 44px */
+
+  --P1-size: clamp(1rem, 2.5vw, 1.25rem);        /* 16px - 20px */
+  --P1-weight: 500;
+  --P1-line-height: clamp(1.5rem, 3vw, 2rem);    /* 24px - 32px */
+
+  --P2-size: clamp(0.875rem, 2vw, 1rem);         /* 14px - 16px */
+  --P2-weight: 500;
+  --P2-line-height: clamp(1.25rem, 2.5vw, 1.75rem); /* 20px - 28px */
+
+  --S1-size: clamp(0.75rem, 1.8vw, 0.875rem);    /* 12px - 14px */
+  --S1-weight: 500;
+  --S1-line-height: clamp(1.125rem, 2vw, 1.5rem); /* 18px - 24px */
+
+  --S2-size: clamp(0.50rem, 1.8vw, 0.75rem); 
+  --S2-weight: 400;
+  --S2-line-height: clamp(1rem, 1.8vw, 1.25rem); /* 16px - 20px */
 }
 
 @theme inline {
@@ -19,8 +55,13 @@
   }
 }
 
+.font-poppins {
+  font-family: var(--font-poppins), sans-serif;
+}
+
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins);
 }
