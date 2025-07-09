@@ -76,45 +76,47 @@ export default function TestimonialCarousel() {
     }
 
     return (
-        <div className="w-full flex flex-col items-center justify-center gap-8 py-6 bg-[#0e0e0e] text-white">
-            <div className="relative w-full max-w-5xl h-[476px] flex items-center justify-center overflow-hidden">
-                {testimonials.map((testimonial, index) => (
-                <div
-                    key={index}
-                    className={`absolute transition-all duration-500 ease-in-out flex flex-col items-center justify-center text-center w-[90%] max-w-md p-6 bg-[#1E1F1E] rounded-2xl border border-[var(--Outline)] shadow-lg min-h-[400px] h-full ${getCardStyle(index)}`}
-                >
-                    <Image
-                        width={100} 
-                        height={50}
-                        src={testimonial.image}
-                        alt={testimonial.name}
-                        className="w-[80px] h-[80px] rounded-2xl mb-4 object-cover"
-                    />
-                    <h3 className="md:text-[32px] text-[28px] font-semibold mb-3">{testimonial.name}</h3>
-                    <p className="sm:text-[18px] text-[16px] text-[var(--Paragraph)] mb-6">{testimonial.title}</p>
-                    <div className="flex gap-3 mb-6">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                        <span key={i} className="text-[#C3EB4D] text-[48px]">★</span>
+        <div className="w-full flex  items-center justify-center gap-8 py-6 bg-[#0e0e0e] text-white">
+            <div className='flex flex-col w-full items-center gap-10'>
+                <div className="relative w-full max-w-5xl h-[476px] flex items-center justify-center overflow-hidden">
+                    {testimonials.map((testimonial, index) => (
+                        <div
+                            key={index}
+                            className={`absolute transition-all duration-500 ease-in-out flex flex-col items-center justify-center text-center w-[90%] max-w-md p-6 bg-[#1E1F1E] rounded-2xl border border-[var(--Outline)] shadow-lg min-h-[400px] h-full ${getCardStyle(index)}`}
+                        >
+                            <Image
+                                width={100} 
+                                height={50}
+                                src={testimonial.image}
+                                alt={testimonial.name}
+                                className="w-[80px] h-[80px] rounded-2xl mb-4 object-cover"
+                            />
+                            <h3 className="md:text-[32px] text-[28px] font-semibold mb-3">{testimonial.name}</h3>
+                            <p className="sm:text-[18px] text-[16px] text-[var(--Paragraph)] mb-6">{testimonial.title}</p>
+                            <div className="flex gap-3 mb-6">
+                            {[...Array(testimonial.rating)].map((_, i) => (
+                                <span key={i} className="text-[#C3EB4D] text-[48px]">★</span>
+                            ))}
+                            </div>
+                            <p className="sm:text-[18px] text-[16px] text-[var(--Paragraph)]">{testimonial.feedback}</p>
+                        </div>
                     ))}
-                    </div>
-                    <p className="sm:text-[18px] text-[16px] text-[var(--Paragraph)]">{testimonial.feedback}</p>
                 </div>
-                ))}
-            </div>
 
-            <div className="flex gap-4">
-                <button
-                    onClick={prev}
-                    className="w-10 h-10 rounded-full bg-[#1e1e1e] flex items-center justify-center text-white hover:bg-[#2c2c2c] transition"
-                >
-                    <BsChevronLeft />
-                </button>
-                <button
-                    onClick={next}
-                    className="w-10 h-10 rounded-full bg-[#1e1e1e] flex items-center justify-center text-white hover:bg-[#2c2c2c] transition"
-                >
-                    <BsChevronRight />
-                </button>
+                <div className="flex gap-4">
+                    <button
+                        onClick={prev}
+                        className="w-[72px] h-[72px] p-4 rounded-full bg-[#1e1e1e] flex items-center justify-center text-white hover:bg-[#2c2c2c] transition"
+                    >
+                        <BsChevronLeft className='w-8 h-8'/>
+                    </button>
+                    <button
+                        onClick={next}
+                        className="w-[72px] h-[72px] p-4 rounded-full bg-[#1e1e1e] flex items-center justify-center text-white hover:bg-[#2c2c2c] transition"
+                    >
+                        <BsChevronRight className='w-8 h-8'/>
+                    </button>
+                </div>
             </div>
         </div>
     )
