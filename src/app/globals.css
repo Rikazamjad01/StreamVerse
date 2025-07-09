@@ -61,7 +61,7 @@
 
 
 body {
-  background: var(--background);
+  background: var(--Background);
   color: var(--foreground);
   font-family: var(--font-poppins);
 }
