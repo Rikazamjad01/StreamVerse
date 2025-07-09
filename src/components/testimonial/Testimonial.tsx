@@ -77,7 +77,7 @@ export default function TestimonialCarousel() {
 
     return (
         <div className="w-full flex flex-col items-center justify-center gap-8 py-6 bg-[#0e0e0e] text-white">
-            <div className="relative w-full max-w-5xl h-[400px] flex items-center justify-center overflow-hidden">
+            <div className="relative w-full max-w-5xl h-[420px] flex items-center justify-center overflow-hidden">
                 {testimonials.map((testimonial, index) => (
                 <div
                     key={index}
