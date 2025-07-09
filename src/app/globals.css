@@ -62,6 +62,6 @@
 
 body {
   background: var(--Background);
-  color: var(--foreground);
+  color: var(--Heading);
   font-family: var(--font-poppins);
 }
