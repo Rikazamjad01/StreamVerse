@@ -77,7 +77,7 @@ export default function TestimonialCarousel() {
 
     return (
         <div className="w-full flex flex-col items-center justify-center gap-8 py-6 bg-[#0e0e0e] text-white">
-            <div className="relative w-full max-w-5xl h-[420px] flex items-center justify-center overflow-hidden">
+            <div className="relative w-full max-w-5xl h-[476px] flex items-center justify-center overflow-hidden">
                 {testimonials.map((testimonial, index) => (
                 <div
                     key={index}
@@ -90,11 +90,11 @@ export default function TestimonialCarousel() {
                         alt={testimonial.name}
                         className="w-[80px] h-[80px] rounded-2xl mb-4 object-cover"
                     />
-                    <h3 className="text-[var(--H3-size)] font-semibold mb-3">{testimonial.name}</h3>
+                    <h3 className="md:text-[32px] text-[28px] font-semibold mb-3">{testimonial.name}</h3>
                     <p className="sm:text-[18px] text-[16px] text-[var(--Paragraph)] mb-6">{testimonial.title}</p>
-                    <div className="flex gap-1 mb-4">
+                    <div className="flex gap-3 mb-6">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                        <span key={i} className="text-[#C3EB4D] text-xl">★</span>
+                        <span key={i} className="text-[#C3EB4D] text-[48px]">★</span>
                     ))}
                     </div>
                     <p className="sm:text-[18px] text-[16px] text-[var(--Paragraph)]">{testimonial.feedback}</p>
