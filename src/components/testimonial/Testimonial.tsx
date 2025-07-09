@@ -76,12 +76,12 @@ export default function TestimonialCarousel() {
     }
 
     return (
-        <div className="w-full flex flex-col items-center justify-center gap-8 py-10 bg-[#0e0e0e] text-white">
-            <div className="relative w-full max-w-5xl h-[500px] flex items-center justify-center overflow-hidden">
+        <div className="w-full flex flex-col items-center justify-center gap-8 py-6 bg-[#0e0e0e] text-white">
+            <div className="relative w-full max-w-5xl h-[400px] flex items-center justify-center overflow-hidden">
                 {testimonials.map((testimonial, index) => (
                 <div
                     key={index}
-                    className={`absolute transition-all duration-500 ease-in-out flex flex-col items-center justify-center text-center w-[90%] max-w-md p-6 bg-[#1E1F1E] rounded-2xl border border-[var(--Outline)] shadow-lg min-h-[476px] h-full ${getCardStyle(index)}`}
+                    className={`absolute transition-all duration-500 ease-in-out flex flex-col items-center justify-center text-center w-[90%] max-w-md p-6 bg-[#1E1F1E] rounded-2xl border border-[var(--Outline)] shadow-lg min-h-[400px] h-full ${getCardStyle(index)}`}
                 >
                     <Image
                         width={100} 
