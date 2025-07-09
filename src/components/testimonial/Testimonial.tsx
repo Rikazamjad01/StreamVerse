@@ -83,7 +83,9 @@ export default function TestimonialCarousel() {
                     key={index}
                     className={`absolute transition-all duration-500 ease-in-out flex flex-col items-center text-center w-[90%] max-w-md p-6 bg-[#1a1a1a] rounded-2xl shadow-lg ${getCardStyle(index)}`}
                 >
-                    <img
+                    <Image
+                        width={100} 
+                        height={50}
                         src={testimonial.image}
                         alt={testimonial.name}
                         className="w-[60px] h-[60px] rounded-full mb-4 object-cover"
