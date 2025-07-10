@@ -50,7 +50,7 @@ const Footer = () => {
                         </div>
                         <p className="md:text-[16px] text-[14px] max-w-[394px] w-full">Stream and share your life moments in real-time with FLOWLIVE.</p>
                         <div className="md:flex hidden gap-[10px] mt-6">
-                            {["/Youtube.svg", "/Twitter.svg", "/Discord.svg", "/Reddit.svg", "/Github.svg", "/Telegram.svg"].map((icon, i) => (
+                            {["/YouTube.svg", "/Twitter.svg", "/Discord.svg", "/Reddit.svg", "/GitHub.svg", "/Telegram.svg"].map((icon, i) => (
                                 <Image key={i} src={icon} alt={`icon-${i}`} width={24} height={24} />
                             ))}
                         </div>
