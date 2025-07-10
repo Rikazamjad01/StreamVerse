@@ -57,7 +57,7 @@ const Footer = () => {
                         <p className="md:flex hidden text-[var(--Disable)] text-xs mt-10">© 2024 Solana Foundation. All rights reserved.</p>
                     </div>
 
-                    <div className="grid sm:grid-cols-2 sm:gap-16 gap-10">
+                    <div className="grid sm:grid-cols-3 sm:gap-16 gap-10">
                         {footerSections.map((section, index) => (
                             <div key={index}>
                                 <h4 className='text-[var(--Heading)] sm:mb-5 mb-2' style={{ fontSize: 'var(--P1-size)', fontWeight: 'var(--H3-weight)', color: 'var(--Heading)' }}>
@@ -65,7 +65,7 @@ const Footer = () => {
                                 </h4>
                                 <ul className='space-y-2 text-[var(--Paragraph)] sm:text-[16px] text-[14px]'>
                                     {section.items.map((item, idx) => (
-                                    <li key={idx}>{item}</li>
+                                    <li key={idx} className='hover:underline cursor-pointer '>{item}</li>
                                     ))}
                                 </ul>
                             </div>

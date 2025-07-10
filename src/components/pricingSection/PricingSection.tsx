@@ -56,7 +56,7 @@ const PricingSection = () => {
         setHighlighted(index);
     };
     return (
-        <section className="bg-[var(--Background)] text-[var(--Paragraph)] py-20">
+        <section className="bg-[var(--Background)] text-[var(--Paragraph)] mb-[100px]">
             <div className="max-w-[1200px] mx-auto text-center px-4">
                 <h2
                     className="text-[var(--Heading)]"
