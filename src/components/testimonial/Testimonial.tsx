@@ -54,7 +54,7 @@ export default function Custom3DCarousel() {
         setActiveIndex((prev) => (prev + 1) % testimonials.length);
     };
 
-    const getSlideStyle = (index:any) => {
+    const getSlideStyle = (index:number) => {
         const position = (index - activeIndex + testimonials.length) % testimonials.length;
         const isCenter = position === 0;
         const isLeft = position === testimonials.length - 1;
