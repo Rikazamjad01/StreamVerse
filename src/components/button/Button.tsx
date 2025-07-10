@@ -16,11 +16,11 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({
     text,
-    bgColor = 'bg-[var(--Primary)]',
-    textColor = 'text-black',
+    bgColor = '',
+    textColor = '',
     padding = 'p-2 md:py-3 lg:p-4',
     fontWeight = 'font-[var(--P1-weight)]',
-    width = 'w-[144px] md:w-[134px] lg:w-[214px]',
+    width = '',
     className = '',
     display = '',
     onClick
@@ -28,7 +28,7 @@ const Button: React.FC<ButtonProps> = ({
     return (
         <button
             type="button"
-            className={`rounded-2xl cursor-pointer ${padding} ${width} ${textColor} ${bgColor} ${fontWeight} ${className} ${display} justify-center`}
+            className={`rounded-2xl cursor-pointer hover:scale-105 transition ease-in-out duration-200 ${padding} ${width} ${textColor} ${bgColor} ${fontWeight} ${className} ${display} justify-center`}
             onClick={onClick}
         >
             {text}

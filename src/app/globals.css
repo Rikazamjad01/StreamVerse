@@ -14,7 +14,7 @@
 /* Typography with clamp() for responsive design */
   --H1-size: clamp(2.5rem, 6vw, 3.75rem);        /* 40px - 60px */
   --H1-weight: 700;
-  --H1-line-height: clamp(2.75rem, 6vw, 4.5rem); /* 44px - 72px (close to 60 or 90 if needed) */
+  --H1-line-height: clamp(2.75rem, 6vw, 3.75rem); /* 44px - 60px */
 
   --H2-size: clamp(2rem, 5vw, 2.5rem);          /* 32px - 40px */
   --H2-weight: 700;

@@ -20,7 +20,7 @@ const Navbar = () => {
                         <li className='py-3 lg:px-5 md:px-3 px-2 cursor-pointer hover:text-[var(--Primary)]'>Contact us</li>
                     </ul>
                 </div>
-                <Button text="Download App" display='max-md:hidden flex'/>
+                <Button text="Download App" display='max-md:hidden flex' className='bg-[var(--Primary)] text-black w-[144px] md:w-[134px] lg:w-[214px]'/>
                 <div className='md:hidden flex'>
                     <div
                         className="w-9 h-10 cursor-pointer flex flex-col items-center justify-center"
