@@ -42,9 +42,9 @@ const Footer = () => {
             </section>
 
             {/* Footer Section */}
-            <footer className="bg-[var(--Placeholder)] border-t border-[var(--Outline)] lg:py-[100px] md:py-[50px] py-[25px] xl:px-[120px] lg:px-[100px] sm:px-[40px] px-4">
-                <div className="flex flex-col md:flex-row justify-between gap-10 ">
-                    <div>
+            <footer className="bg-[var(--Placeholder)] border-t border-[var(--Outline)] lg:py-[100px] md:py-[50px] py-[25px] xl:px-[120px] lg:px-[80px] sm:px-[40px] px-4">
+                <div className="flex flex-col md:flex-row justify-between gap-10">
+                    <div className='max-w-[394px] w-full'>
                         <div className='cursor-pointer lg:text-[28px] md:text-[24px] sm:text-[20px] text-[18px]'>
                             <p>Stream<span className='text-[var(--Primary)]' style={{ fontWeight: 'var(--H1-weight)' }}>VERSE</span></p>
                         </div>
@@ -57,9 +57,9 @@ const Footer = () => {
                         <p className="md:flex hidden text-[var(--Disable)] text-xs mt-10">© 2024 Solana Foundation. All rights reserved.</p>
                     </div>
 
-                    <div className="grid sm:grid-cols-3 sm:gap-16 gap-10">
+                    <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-y-3 max-w-[684px] w-full">
                         {footerSections.map((section, index) => (
-                            <div key={index}>
+                            <div className='max-w-[180px] w-full' key={index}>
                                 <h4 className='text-[var(--Heading)] sm:mb-5 mb-2' style={{ fontSize: 'var(--P1-size)', fontWeight: 'var(--H3-weight)', color: 'var(--Heading)' }}>
                                     {section.title}
                                 </h4>
@@ -72,12 +72,12 @@ const Footer = () => {
                         ))}
 
                         {/* Download section stays separate since it's unique */}
-                        <div className='flex flex-col justify-between max-sm:gap-4'>
+                        <div className='flex flex-col justify-between gap-4'>
                             <div>
                                 <h4 className="text-[var(--Heading)] font-semibold md:mb-5 mb-2">DOWNLOAD</h4>
-                                <p className="text-[--Paragraph] text-sm mb-3">Get the FLOWLIVE app now and start streaming!</p>
+                                <p className=" text-[var(--Paragraph)] text-sm">Get the FLOWLIVE app now and start streaming!</p>
                             </div>
-                            <Button text="Download App" className="bg-[var(--Primary)] text-black w-[150px] md:w-[170px] lg:w-[300px]" />
+                            <Button text="Download App" className="bg-[var(--Primary)] text-black w-[150px] md:w-[170px] lg:w-[228px]" />
                         </div>
                     </div>
                     <div className='flex flex-col md:hidden'>

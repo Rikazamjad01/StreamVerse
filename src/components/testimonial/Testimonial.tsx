@@ -61,27 +61,27 @@ export default function Custom3DCarousel() {
         const isRight = position === 1;
 
         if (isCenter)
-        return 'z-30 scale-100 rotate-y-0 opacity-100 left-[51.7%]';
+        return 'z-30 xl:scale-95 lg:scale-90 md:scale-70 rotate-y-0 opacity-100 left-[50%]';
         if (isLeft)
-        return 'z-20 scale-80 -rotate-y-6 -translate-x-[100%] opacity-60';
+        return 'z-20 xl:scale-80 lg:scale-70 md:scale-60 -rotate-y-6 xl:-translate-x-[100%] lg:-translate-x-[95%] md:-translate-x-[85%]  opacity-60';
         if (isRight)
-        return 'z-20 scale-80 rotate-y-6 translate-x-[100%] opacity-60';
+        return 'z-20 xl:scale-80 lg:scale-70 md:scale-60 rotate-y-6 xl:translate-x-[90%] lg:translate-x-[80%] md:translate-x-[50%] opacity-60';
 
         return 'opacity-0 scale-75 pointer-events-none';
     };
 
     return (
-        <div className='max-w-[1200px] mx-auto lg:flex hidden'>
+        <div className='max-w-[1200px] mx-auto md:flex hidden'>
             <div className="w-full flex flex-col items-center justify-center text-center gap-10 py-10 px-4 relative md:my-[100px] my-[50px]">
                 <div className='mb-[60px]'>
                     <p style={{fontSize: 'var(--H2-size)', fontWeight: 'var(--H3-weight)', color: 'var(--Heading)', lineHeight: 'var(--H1-size)'}}>Words of Appreciation</p>
                     <p className='md:text-[18px] text-[16px]'>Hear what our creators have to say about their experience using StreamVerse to go live across multiple platforms.</p>
                 </div>
-                <div className="relative w-full h-[476px] perspective-1000">
+                <div className="relative w-full h-[476px] perspective-1000 bg-indigo-400">
                     {testimonials.map((testimonial, i) => (
                     <div
                         key={i}
-                        className={`absolute top-0 left-1/3 max-w-[430px] w-full transform -translate-x-1/2 transition-all duration-700 ease-[cubic-bezier(0.77,0,0.175,1)] ${getSlideStyle(i)} w-[360px] h-full bg-[#1E1F1E] text-white rounded-2xl p-6 border border-[var(--Outline)] shadow-lg flex flex-col items-center text-center`}
+                        className={`absolute top-0 left-1/3 xl:w-[430px] lg:w-[400px] md:w-[370px] sm:w-[340px] h-full transform -translate-x-1/2 transition-all duration-700 ease-[cubic-bezier(0.77,0,0.175,1)] ${getSlideStyle(i)}  h-full bg-[#1E1F1E] text-white rounded-2xl p-6 border border-[var(--Outline)] shadow-lg flex flex-col items-center text-center`}
                     >
                         <Image
                             src={testimonial.image}
