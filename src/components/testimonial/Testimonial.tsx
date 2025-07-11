@@ -77,7 +77,7 @@ export default function Custom3DCarousel() {
                     <p style={{fontSize: 'var(--H2-size)', fontWeight: 'var(--H3-weight)', color: 'var(--Heading)', lineHeight: 'var(--H1-size)'}}>Words of Appreciation</p>
                     <p className='md:text-[18px] text-[16px]'>Hear what our creators have to say about their experience using StreamVerse to go live across multiple platforms.</p>
                 </div>
-                <div className="relative w-full h-[476px] perspective-1000 bg-indigo-400">
+                <div className="relative w-full h-[476px] perspective-1000">
                     {testimonials.map((testimonial, i) => (
                     <div
                         key={i}
