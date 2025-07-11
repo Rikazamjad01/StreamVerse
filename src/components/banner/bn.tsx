@@ -5,6 +5,7 @@ import ReactFlow, {
     useNodesState,
     useEdgesState,
     MarkerType,
+    Position,
 } from 'reactflow';
 import 'reactflow/dist/style.css';
 
@@ -15,8 +16,8 @@ const initialNodes = [
         data: {
         label: <img src="/StreamVerse.svg" alt="StreamVERSE" className="w-full h-full drop-shadow-[0_0_10px_#c6ff00]" />,
         },
-        sourcePosition: 'left',
-        targetPosition: 'left',
+        sourcePosition: Position.Left,
+        targetPosition: Position.Left,
         style: { background: 'transparent', border: 'none', padding: '0' }
     },
     {
@@ -25,8 +26,8 @@ const initialNodes = [
         data: {
         label: <img src="/YT.svg" alt="YouTube"  className="w-full h-full" />,
         },
-        sourcePosition: 'right',
-        targetPosition: 'right',
+        sourcePosition: Position.Right,
+        targetPosition: Position.Right,
         style: { background: 'transparent', border: 'none', padding: '0', margin: '0' }
     },
     {
@@ -35,8 +36,8 @@ const initialNodes = [
         data: {
         label: <img src="/Twitch.svg" alt="Twitch"  className="w-full h-full"  />,
         },
-        sourcePosition: 'right',
-        targetPosition: 'right',
+        sourcePosition: Position.Right,
+        targetPosition: Position.Right,
         style: { background: 'transparent', border: 'none', padding: '0' }
     },
     {
@@ -45,8 +46,8 @@ const initialNodes = [
         data: {
         label: <img src="/Tiktok.svg" alt="Tiktok"  className="w-full h-full"  />,
         },
-        sourcePosition: 'right',
-        targetPosition: 'right',
+        sourcePosition: Position.Right,
+        targetPosition: Position.Right,
         style: { background: 'transparent', border: 'none', padding: '0' }
     },
     {
@@ -55,8 +56,8 @@ const initialNodes = [
         data: {
         label: <img src="/Facebook.svg" alt="Facebook"  className="w-full h-full"  />,
         },
-        sourcePosition: 'left',
-        targetPosition: 'left',
+        sourcePosition: Position.Left,
+        targetPosition: Position.Left,
         style: { background: 'transparent', border: 'none', padding: '0' }
     },
     {
@@ -65,8 +66,8 @@ const initialNodes = [
         data: {
         label: <img src="/Bigo.svg" alt="Bigo"  className="w-full h-full"  />,
         },
-        sourcePosition: 'left',
-        targetPosition: 'left',
+        sourcePosition: Position.Left,
+        targetPosition: Position.Left,
         style: { background: 'transparent', border: 'none', padding: '0' }
     },
     {
@@ -75,8 +76,8 @@ const initialNodes = [
         data: {
         label: <img src="/Instagram.svg" alt="Instagram"  className="w-full h-full"  />,
         },
-        sourcePosition: 'left',
-        targetPosition: 'left',
+        sourcePosition: Position.Left,
+        targetPosition: Position.Left,
         style: { background: 'transparent', border: 'none', padding: '0' }
     },
 ];
