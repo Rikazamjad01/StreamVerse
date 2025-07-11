@@ -107,7 +107,7 @@ const PricingSection = () => {
                                 >
                                     {plan.description}
                                 </p>
-                                <div className='flex items-center justify-between'>
+                                <div className='flex max-lg:flex-col lg:items-center justify-between gap-y-3'>
                                     <Button text="Get Start" className={ clsx('w-[110px] md:w-[130px] lg:w-[150px] sm:text-[16px] text-[14px]', plan.highlight ? 'bg-[var(--Primary)] text-[var(--Background)]' : 'bg-[var(--Placeholder)] text-[var(--Heading)] shadow-[inset_0_2px_2px_rgba(255,255,255,0.5),_0_9px_24px_rgba(0,0,0,0.25)]')}/>
                                     <p className="text-[var(--Heading)] text-[32px] font-bold ">
                                         {plan.price}
