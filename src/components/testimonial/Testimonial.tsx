@@ -165,12 +165,14 @@ export default function Custom3DCarousel() {
                         <button
                             onClick={prev}
                             className="md:w-[60px] md:h-[60px] h-[50px] w-[50px] p-4 rounded-full bg-[#1e1e1e] flex items-center justify-center text-white hover:bg-[#2c2c2c] transition"
+                            name='previous slide button' id='prevSlide' aria-label="previous"
                         >
                             <BsChevronLeft className="w-6 h-6" />
                         </button>
                         <button
                             onClick={next}
                             className="md:w-[60px] md:h-[60px] h-[50px] w-[50px] p-4 rounded-full bg-[#1e1e1e] flex items-center justify-center text-white hover:bg-[#2c2c2c] transition"
+                            name='next slide button' id='nextSlide' aria-label="next"
                         >
                             <BsChevronRight className="w-6 h-6" />
                         </button>
