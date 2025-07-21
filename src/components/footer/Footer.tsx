@@ -51,7 +51,7 @@ const Footer = () => {
                         <p className="md:text-[16px] text-[14px] max-w-[394px] w-full">Stream and share your life moments in real-time with FLOWLIVE.</p>
                         <div className="md:flex hidden gap-[10px] mt-6">
                             {["/YouTube.svg", "/Twitter.svg", "/Discord.svg", "/Reddit.svg", "/GitHub.svg", "/Telegram.svg"].map((icon, i) => (
-                                <Image key={i} src={icon} alt={`icon-${i}`} width={24} height={24} />
+                                <Image key={i} src={icon} alt={`icon-${i}`} width={24} height={24} className='cursor-pointer hover:scale-105 duration-300 transition'/>
                             ))}
                         </div>
                         <p className="md:flex hidden text-[var(--Disable)] text-xs mt-10">© 2024 Solana Foundation. All rights reserved.</p>
@@ -65,9 +65,9 @@ const Footer = () => {
                                 </h4>
                                 <ul className='space-y-2 text-[var(--Paragraph)] sm:text-[16px] text-[14px]'>
                                     {section.items.map((item, idx) => (
-                                    <li key={idx} className='hover:underline cursor-pointer '>{item}</li>
+                                        <li key={idx} className='hover:text-[var(--Primary)] cursor-pointer'>{item}</li>
                                     ))}
-                                </ul>
+                                </ul> 
                             </div>
                         ))}
 
@@ -82,8 +82,8 @@ const Footer = () => {
                     </div>
                     <div className='flex flex-col md:hidden'>
                         <div className="flex gap-[10px] mt-6">
-                            {["/Youtube.svg", "/Twitter.svg", "/Discord.svg", "/Reddit.svg", "/Github.svg", "/Telegram.svg"].map((icon, i) => (
-                                <Image key={i} src={icon} alt={`icon-${i}`} width={24} height={24} />
+                            {["/YouTube.svg", "/Twitter.svg", "/Discord.svg", "/Reddit.svg", "/GitHub.svg", "/Telegram.svg"].map((icon, i) => (
+                                <Image key={i} src={icon} alt={`icon-${i}`} width={24} height={24} className='cursor-pointer hover:scale-105 duration-300 transition'/>
                             ))}
                         </div>
                         <p className="flex text-[var(--Disable)] text-xs mt-10">© 2024 Solana Foundation. All rights reserved.</p>
