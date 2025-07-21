@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from '../button/Button'
-import StreamVerseDiagram from './chart'
+// import StreamVerseDiagram from './chart'
 import Image from 'next/image'
 
 const Banner = () => {
