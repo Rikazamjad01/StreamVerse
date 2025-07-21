@@ -13,14 +13,14 @@ const Navbar = () => {
                     <p>Stream<span className='text-[var(--Primary)]' style={{ fontWeight: 'var(--H1-weight)' }}>VERSE</span></p>
                 </div>
                 <div>
-                    <ul className='md:flex hidden text-[18px] text-white'>
+                    <ul className='md:flex hidden lg:text-[18px] text-[16px] text-white'>
                         <li className='py-3 lg:px-5 md:px-3 px-2 cursor-pointer hover:text-[var(--Primary)]'>Home</li>
                         <li className='py-3 lg:px-5 md:px-3 px-2 cursor-pointer hover:text-[var(--Primary)]'>About us</li>
                         <li className='py-3 lg:px-5 md:px-3 px-2 cursor-pointer hover:text-[var(--Primary)]'>How it Works</li>
                         <li className='py-3 lg:px-5 md:px-3 px-2 cursor-pointer hover:text-[var(--Primary)]'>Contact us</li>
                     </ul>
                 </div>
-                <Button text="Download App" display='max-md:hidden flex' className='bg-[var(--Primary)] text-black w-[144px] md:w-[134px] lg:w-[214px]'/>
+                <Button text="Download App" display='max-md:hidden flex' className='bg-[var(--Primary)] text-black w-[144px] md:w-[174px] lg:w-[214px]'/>
                 <div className='md:hidden flex'>
                     <div
                         className="w-9 h-10 cursor-pointer flex flex-col items-center justify-center"
@@ -49,7 +49,7 @@ const Navbar = () => {
                     <li className='cursor-pointer hover:text-[var(--Primary)]'>How it Works</li>
                     <li className='cursor-pointer hover:text-[var(--Primary)]'>Contact us</li>
                     <li>
-                        <Button text="Download App" width="w-full" padding="p-3" className="mt-4 text-[16px]"/>
+                        <Button text="Download App" width="w-full" padding="p-3" className="mt-4 text-[16px] bg-[#C3EB4D] text-black"/>
                     </li>
                 </ul>
             </div>

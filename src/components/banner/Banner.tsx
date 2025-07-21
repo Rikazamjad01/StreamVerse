@@ -1,7 +1,6 @@
 import React from 'react'
-import Image from 'next/image'
 import Button from '../button/Button'
-import StreamVerseDiagram from './bn'
+import StreamVerseDiagram from './chart'
 
 const Banner = () => {
     return (
