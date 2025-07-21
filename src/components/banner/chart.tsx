@@ -60,7 +60,7 @@ const initialNodes = [
     {
         id: 'tiktok',
         position: { x: 130, y: 70 },
-        data: { label: <Image src="/Tiktok.svg" alt="Tiktok" width={81} height={81} className='w-full h-full'/> },
+        data: { label: <Image src="/TikTok.svg" alt="Tiktok" width={81} height={81} className='w-full h-full'/> },
         style: { background: 'transparent', border: 'none', padding: '0px', width: '81px', height: '81px' },
         sourcePosition: Position.Right,
         targetPosition: Position.Right,
