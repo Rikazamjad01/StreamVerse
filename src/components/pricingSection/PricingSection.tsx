@@ -55,7 +55,7 @@ const PricingSection = () => {
     const handleSelect = (index: number) => {
         setHighlighted(index);
     };
-    const isMobile = typeof window !== 'undefined' && window.innerWidth <= 768;
+    // const isMobile = typeof window !== 'undefined' && window.innerWidth <= 768;
     return (
         <section className="bg-[var(--Background)] text-[var(--Paragraph)] mb-[100px]">
             <div className="max-w-[1200px] mx-auto text-center px-4">
