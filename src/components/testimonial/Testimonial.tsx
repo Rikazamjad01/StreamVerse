@@ -103,6 +103,7 @@ export default function Custom3DCarousel() {
                     <Swiper
                         effect="cards"
                         grabCursor={true}
+                        loop={true}
                         modules={[EffectCards]}
                         className="w-full max-w-[300px] h-[350px]"
                     >
