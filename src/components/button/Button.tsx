@@ -28,7 +28,7 @@ const Button: React.FC<ButtonProps> = ({
     return (
         <button
             type="button"
-            className={`rounded-2xl cursor-pointer hover:scale-105 transition ease-in-out duration-200 ${padding} ${width} ${textColor} ${bgColor} ${fontWeight} ${className} ${display} justify-center`}
+            className={`md:rounded-2xl rounded-xl cursor-pointer hover:scale-105 transition ease-in-out duration-200 ${padding} ${width} ${textColor} ${bgColor} ${fontWeight} ${className} ${display} justify-center`}
             onClick={onClick}
         >
             {text}

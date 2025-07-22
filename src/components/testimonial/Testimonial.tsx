@@ -96,7 +96,7 @@ export default function Custom3DCarousel() {
             <div className="w-full flex flex-col items-center justify-center text-center xl:gap-10 lg:gap-8 md:gap-6 sm:gap-4 gap-2 px-4 relative md:my-[100px] my-[50px]">
                 <div className='lg:mb-[60px] md:mb-[40px] mb-[20px] space-y-2'>
                     <p style={{fontSize: 'var(--H2-size)', fontWeight: 'var(--H3-weight)', color: 'var(--Heading)', lineHeight: 'var(--H1-line-height)'}}>Words of Appreciation</p>
-                    <p className='md:text-[18px] text-[16px]'>Hear what our creators have to say about their experience using StreamVerse to go live across multiple platforms.</p>
+                    <p className='md:text-[18px] sm:text-[16px] text-[14px]'>Hear what our creators have to say about their experience using StreamVerse to go live across multiple platforms.</p>
                 </div>
                 
                 {isMobile ? (

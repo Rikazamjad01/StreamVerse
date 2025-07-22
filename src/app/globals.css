@@ -24,13 +24,13 @@
   --H3-weight: 600;
   --H3-line-height: clamp(2rem, 4.5vw, 2.75rem); /* 32px - 44px */
 
-  --H4-size: clamp(1.25rem, 4vw, 1.5rem)         /* 20px - 24px */
+  --H4-size: clamp(1.25rem, 4vw, 1.5rem);         /* 20px - 24px */
 
-  --P1-size: clamp(1rem, 2.5vw, 1.25rem);        /* 16px - 20px */
+  --P1-size: clamp(0.9rem, 2.5vw, 1.25rem);        /* 14.4px - 20px */
   --P1-weight: 500;
   --P1-line-height: clamp(1.5rem, 3vw, 2rem);    /* 24px - 32px */
 
-  --P2-size: clamp(0.875rem, 2vw, 1rem);         /* 14px - 16px */
+  --P2-size: clamp(0.8rem, 2vw, 1rem);         /* 13px - 16px */
   --P2-weight: 500;
   --P2-line-height: clamp(1.25rem, 2.5vw, 1.75rem); /* 20px - 28px */
 
