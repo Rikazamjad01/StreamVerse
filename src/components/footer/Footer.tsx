@@ -36,7 +36,8 @@ const Footer = () => {
                         alt="Live Streaming Preview"
                         width={560}
                         height={376}
-                        className='xl:w-[560px] lg:w-[460px] w-[360px] '
+                        className='xl:w-[560px] lg:w-[460px] w-[360px]'
+                        priority
                     />
                 </div>
             </section>
@@ -51,7 +52,7 @@ const Footer = () => {
                         <p className="md:text-[16px] text-[14px] max-w-[394px] w-full">Stream and share your life moments in real-time with FLOWLIVE.</p>
                         <div className="md:flex hidden gap-[10px] mt-6">
                             {["/YouTube.svg", "/Twitter.svg", "/Discord.svg", "/Reddit.svg", "/GitHub.svg", "/Telegram.svg"].map((icon, i) => (
-                                <Image key={i} src={icon} alt={`icon-${i}`} width={24} height={24} className='cursor-pointer hover:scale-105 duration-300 transition'/>
+                                <Image priority  key={i} src={icon} alt={`icon-${i}`} width={24} height={24} className='cursor-pointer hover:scale-105 duration-300 transition'/>
                             ))}
                         </div>
                         <p className="md:flex hidden text-[var(--Disable)] text-xs mt-10">© 2024 Solana Foundation. All rights reserved.</p>
@@ -83,7 +84,7 @@ const Footer = () => {
                     <div className='flex flex-col md:hidden'>
                         <div className="flex gap-[10px] mt-6">
                             {["/YouTube.svg", "/Twitter.svg", "/Discord.svg", "/Reddit.svg", "/GitHub.svg", "/Telegram.svg"].map((icon, i) => (
-                                <Image key={i} src={icon} alt={`icon-${i}`} width={24} height={24} className='cursor-pointer hover:scale-105 duration-300 transition'/>
+                                <Image priority key={i} src={icon} alt={`icon-${i}`} width={24} height={24} className='cursor-pointer hover:scale-105 duration-300 transition'/>
                             ))}
                         </div>
                         <p className="flex text-[var(--Disable)] text-xs mt-10">© 2024 Solana Foundation. All rights reserved.</p>

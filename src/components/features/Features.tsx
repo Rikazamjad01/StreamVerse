@@ -66,7 +66,7 @@ const Features = () => {
                 <div key={index} className={` rounded-2xl p-6 text-white text-start gap-10 flex flex-col ${feature.bg} ${feature.colSpan} ${feature.rowSpan} h-auto min-h-[280px] sm:min-h-[320px] md:min-h-[360px] lg:min-h-[400px]`}>
                     <div className='flex flex-col h-full gap-10'>
                         <div className="w-[72px] h-[72px] p-4 rounded-2xl mb-10" style={{ backgroundColor: feature.iconBg }}>
-                            <Image src={feature.icon} alt={`${feature.title} icon`} width={40} height={40} />
+                            <Image priority src={feature.icon} alt={`${feature.title} icon`} width={40} height={40} />
                         </div>
                         <div className='h-full' style={{backgroundImage: `url('/cardBgImage.svg')`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
                             <h3 className="font-semibold mb-2" style={{ fontSize: 'var(--H3-size)' }}>

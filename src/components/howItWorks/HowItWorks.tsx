@@ -77,6 +77,7 @@ export default function HowItWorks() {
                             width={300}
                             height={500}
                             className="object-cover w-full h-full"
+                            priority 
                         />
                     </div>  
                 </div>
