@@ -103,7 +103,6 @@ export default function Custom3DCarousel() {
                     <Swiper
                         effect="cards"
                         grabCursor={true}
-                        loop={true}
                         modules={[EffectCards]}
                         className="w-full max-w-[300px] h-[350px]"
                     >
@@ -122,7 +121,7 @@ export default function Custom3DCarousel() {
                             <p className="text-[13px] text-[var(--Paragraph)] mb-3">{testimonial.title}</p>
                             <div className="flex gap-1 mb-4">
                                 {[...Array(testimonial.rating)].map((_, i) => (
-                                <span key={i} className="text-[#C3EB4D] text-[24px]">★</span>
+                                    <span key={i} className="text-[#C3EB4D] text-[24px]">★</span>
                                 ))}
                             </div>
                             <p className="text-[13px] text-[var(--Paragraph)]">{testimonial.feedback}</p>
