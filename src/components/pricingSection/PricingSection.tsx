@@ -87,7 +87,7 @@ const PricingSection = () => {
                         className={clsx(
                             'rounded-4xl p-2 flex flex-col justify-between',
                             'bg-[var(--Placeholder)] text-left border border-[var(--Outline)] cursor-pointer hover:border-[var(--Primary)] duration-200 transition ease-in-out',
-                                highlighted === index
+                            highlighted === index
                             ? 'border-[var(--Primary)]'
                             : 'border-[var(--Outline)] hover:border-[var(--Primary)]'
                         )}
@@ -95,7 +95,9 @@ const PricingSection = () => {
                         <div className='flex flex-col gap-2'>
                             <div className='bg-[var(--onPlaceholder)] p-4 rounded-3xl'>
                                 <div className='flex space-x-2 items-center mb-3'>
-                                    <div className='bg-[var(--Primary)] rounded-full w-[10px] h-[10px]'></div>
+                                    {highlighted === index && (
+                                        <div className='bg-[var(--Primary)] rounded-full w-[10px] h-[10px]'></div>
+                                    )}
                                     <h3 className="text-[var(--Heading)] font-bold">{plan.name}</h3>
                                 </div>
                                 <p
@@ -108,7 +110,15 @@ const PricingSection = () => {
                                     {plan.description}
                                 </p>
                                 <div className='flex max-lg:flex-col lg:items-center justify-between gap-y-3'>
-                                    <Button text="Get Start" className={ clsx('w-[110px] md:w-[130px] lg:w-[150px] sm:text-[16px] text-[14px]', plan.highlight ? 'bg-[var(--Primary)] text-[var(--Background)]' : 'bg-[var(--Placeholder)] text-[var(--Heading)] shadow-[inset_0_2px_2px_rgba(255,255,255,0.5),_0_9px_24px_rgba(0,0,0,0.25)]')}/>
+                                    <Button
+                                        text="Get Start"
+                                        className={clsx(
+                                            'w-[110px] md:w-[130px] lg:w-[150px] sm:text-[16px] text-[14px]',
+                                            highlighted === index
+                                                ? 'bg-[var(--Primary)] text-[var(--Background)]'
+                                                : 'bg-[var(--Placeholder)] text-[var(--Heading)] shadow-[inset_0_2px_2px_rgba(255,255,255,0.5),_0_9px_24px_rgba(0,0,0,0.25)]'
+                                        )}
+                                    />
                                     <p className="text-[var(--Heading)] text-[32px] font-bold ">
                                         {plan.price}
                                     <span className="text-[var(--Disable)] text-base font-medium">/month</span>
@@ -118,8 +128,15 @@ const PricingSection = () => {
                             <div className='px-2 py-4'>
                                 <ul className="space-y-3">
                                     {plan.features.map((feature, idx) => (
-                                        <li key={idx} className="flex items-center gap-y-4 text-[var(--Paragraph)] text-sm">
-                                            <Image src={'/Selection.svg'} alt="select icon" width={24} height={24}/>
+                                        <li key={idx} className="flex items-center gap-y-4 space-x-2 text-[var(--Paragraph)] text-sm">
+                                            <Image src={'/Selection.svg'} alt="select icon" width={20} height={20} 
+                                                className={clsx(
+                                                    'rounded-full p-1 transition-colors duration-200',
+                                                    highlighted === index
+                                                        ? 'bg-[var(--Primary)]'
+                                                        : 'bg-white'
+                                                )}
+                                            />
                                             <span>{feature}</span>
                                         </li>
                                     ))}
