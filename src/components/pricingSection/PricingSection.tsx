@@ -119,7 +119,7 @@ const PricingSection = () => {
                                 <ul className="space-y-3">
                                     {plan.features.map((feature, idx) => (
                                         <li key={idx} className="flex items-center gap-y-4 text-[var(--Paragraph)] text-sm">
-                                            <Image priority src={'/Selection.svg'} alt="select icon" width={24} height={24}/>
+                                            <Image src={'/Selection.svg'} alt="select icon" width={24} height={24}/>
                                             <span>{feature}</span>
                                         </li>
                                     ))}

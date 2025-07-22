@@ -149,7 +149,6 @@ export default function Custom3DCarousel() {
                                 width={80}
                                 height={80}
                                 className="rounded-2xl md:w-[80px] md:h-[80px] w-[50px] h-[50px] mb-4 object-cover"
-                                priority
                             />
                             <h3 className="lg:text-[32px] sm:text-[28px] text-[24px] font-semibold mb-1">{testimonial.name}</h3>
                             <p className="lg:text-[18px] sm:text-[14px] text-[12px] text-[var(--Paragraph)] mb-3">{testimonial.title}</p>
