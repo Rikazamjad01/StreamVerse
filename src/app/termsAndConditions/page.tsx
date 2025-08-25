@@ -53,7 +53,7 @@ const data = [
   "• No waiver of any term is a continuing waiver.",
   "• Force majeure: we are not responsible for events beyond our reasonable control.",
   "Contact",
-  "Questions about these Terms? Use the Contact page or email dsentllc23@gmail.com.",
+  "Questions about these Terms? Use the Contact page or email StreamverseLive@mail.com.",
   "Disclaimer",
   "This document is a general template adapted for a multi-streaming/analytics product. It does not constitute legal advice. Please have counsel review for your specific company, governing law, and app-store rules."
 ];

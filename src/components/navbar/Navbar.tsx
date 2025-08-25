@@ -55,10 +55,14 @@ const Navbar = () => {
                     <button onClick={() => setIsOpen(false)} className="text-[20px] font-bold">x</button>
                 </div>
                 <ul className='flex flex-col gap-4 text-[16px]'>
-                    <li className='cursor-pointer hover:text-[var(--Primary)]'>Home</li>
-                    <li className='cursor-pointer hover:text-[var(--Primary)]'>About us</li>
-                    <li className='cursor-pointer hover:text-[var(--Primary)]'>How it Works</li>
-                    <li className='cursor-pointer hover:text-[var(--Primary)]'>Contact us</li>
+                    {/* <li className='cursor-pointer hover:text-[var(--Primary)]'>Home</li> */}
+                    <li className='py-3 lg:px-5 md:px-3 px-2 cursor-pointer hover:text-[var(--Primary)] scroll-smooth'>
+                        <Link href={'/#features'}>About us</Link>
+                    </li>
+                    <li className='py-3 lg:px-5 md:px-3 px-2 cursor-pointer hover:text-[var(--Primary)] scroll-smooth'>
+                        <Link href={'/#howItWorks'}>How it Works</Link>
+                    </li>
+                    {/* <li className='cursor-pointer hover:text-[var(--Primary)]'>Contact us</li> */}
                     <li>
                         <Button text="Download App" width="w-full" padding="p-3" className="mt-4 text-[16px] bg-[#C3EB4D] text-black"/>
                     </li>
