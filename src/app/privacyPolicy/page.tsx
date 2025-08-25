@@ -2,7 +2,7 @@
 
 const data = [
   "Last updated: 2025-08-25",
-  "This Privacy Policy explains how StreamVerse (the “Service”) and its mobile application, the FLOWLIVE app (collectively “we”, “us”, or “our”), collect, use, disclose, and protect information when you visit our website, create an account, connect social platforms, or use our multi-streaming, analytics, and comment management features.",
+  "This Privacy Policy explains how StreamVerse (the “Service”) and its mobile application, the StreamVERSE app (collectively “we”, “us”, or “our”), collect, use, disclose, and protect information when you visit our website, create an account, connect social platforms, or use our multi-streaming, analytics, and comment management features.",
   "Who We Are & How To Contact Us",
   "StreamVerse operates a platform that lets creators go live to multiple social networks at once and review analytics and audience interactions from a single dashboard. For privacy questions or requests, contact us via the site’s Contact page or at your privacy email here.",
   "Information We Collect",
@@ -48,7 +48,7 @@ function PrivacyPolicy() {
         Privacy Policy
       </h1>
 
-      <div className="w-full max-w-4xl pt-6 md:pt-10 space-y-4">
+      <div className="w-full pt-6 md:pt-10 space-y-4">
         {data.map((element, idx) => {
           const isHeading = /^[A-Za-z0-9].*:$/.test(element) || element.match(/^(\d\)|Last updated)/);
           return (

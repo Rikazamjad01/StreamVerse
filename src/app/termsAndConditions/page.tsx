@@ -59,14 +59,14 @@ const data = [
 function TermsAndConditions() {
   return (
     <div className="flex flex-col py-[5vh] px-4 bg-white">
-      <h4 className="text-lg md:text-xl font-medium text-black">
+      <h4 className="text-lg md:text-xl text-black">
         StreamVerse Terms & Conditions
       </h4>
       <h1 className="mt-3 text-2xl md:text-3xl lg:text-4xl font-bold text-black">
         Terms & Conditions
       </h1>
 
-      <div className="w-full max-w-4xl pt-6 md:pt-10 space-y-4">
+      <div className="w-full pt-6 md:pt-10 space-y-4">
         {data.map((element, idx) => {
           const isHeading =
             /^[A-Za-z].*$/.test(element) &&
@@ -77,7 +77,7 @@ function TermsAndConditions() {
               key={idx}
               className={`text-black leading-relaxed ${
                 isHeading
-                  ? "font-medium text-base md:text-lg mt-6"
+                  ? "font-medium text-base md:text-lg"
                   : "text-xs md:text-sm"
               }`}
             >
