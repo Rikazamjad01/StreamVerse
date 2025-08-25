@@ -60,7 +60,7 @@ const data = [
 
 function TermsAndConditions() {
   return (
-    <div className="flex flex-col bg-white pt-2">
+    <div className="flex flex-col bg-white pt-2 w-full">
       <Navbar/>
       <div className="flex flex-col py-[5vh] px-4">
         <h1 className="mt-3 text-xl md:text-2xl lg:text-3xl font-bold text-black">
