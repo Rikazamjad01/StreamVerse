@@ -66,4 +66,5 @@ body {
   background: var(--Background);
   color: var(--Heading);
   font-family: var(--font-poppins);
+  scroll-behavior: smooth;
 }

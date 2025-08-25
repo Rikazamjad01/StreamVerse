@@ -49,11 +49,11 @@ const keyFeatures = [
         colSpan: 'col-span-1',
         rowSpan: 'row-span-1',
     },
-];
+];  
 
 const Features = () => {
     return (
-        <div className="max-w-[1200px] w-full mx-auto text-center sm:my-[100px] my-[50px] xl:px-0 px-4" id='features'>
+        <div className="max-w-[1200px] w-full mx-auto text-center sm:my-[100px] my-[50px] xl:px-0 px-4 scroll-smooth" id='features'>
             <p style={{ fontSize: 'var(--H2-size)', fontWeight: 'var(--H3-weight)' }}>
                 Key Features
             </p>

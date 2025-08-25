@@ -55,7 +55,7 @@ export default function HowItWorks() {
 
     return (
         <section className="max-w-[1200px] mx-auto xl:px-0 px-4 py-10">
-            <div className="flex flex-col gap-10" id='howItWorks'>
+            <div className="flex flex-col gap-10 scroll-smooth" id='howItWorks'>
                 <div>
                     <h2 className="text-3xl md:text-4xl font-bold text-center mb-2">How it Works</h2>
                     <p className="text-center text-gray-400">
