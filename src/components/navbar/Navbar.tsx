@@ -9,7 +9,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div className='max-w-[1080px] mx-auto rounded-[20px] p-3 flex justify-between items-center font-[var(--font-poppins)] bg-[var(--Placeholder)] shadow-[inset_0_2px_2px_rgba(255,255,255,0.5),_0_9px_24px_rgba(0,0,0,0.25)]'>
+            <div className='xl:w-[1080px] lg:w-[980px] w-full mx-auto rounded-[20px] p-3 flex justify-between items-center font-[var(--font-poppins)] bg-[var(--Placeholder)] shadow-[inset_0_2px_2px_rgba(255,255,255,0.5),_0_9px_24px_rgba(0,0,0,0.25)]'>
                 <div className='cursor-pointer lg:text-[28px] md:text-[24px] sm:text-[20px] text-[18px]'>
                     <Link href={'/'}>
                         <p>Stream<span className='text-[var(--Primary)]' style={{ fontWeight: 'var(--H1-weight)' }}>VERSE</span></p>

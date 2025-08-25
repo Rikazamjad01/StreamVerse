@@ -28,7 +28,7 @@ import Image from 'next/image';
             'Click "Go Live" and start broadcasting across multiple platforms',
             'Manage comments, reactions, and viewer interactions in real-time from a single dashboard',
             ],
-            image: '/step1.png',
+            image: '/step3.png',
         },
         {
             id: '04',
@@ -105,7 +105,7 @@ export default function HowItWorks() {
                                 alt={steps[activeStep].title}
                                 width={300}
                                 height={500}
-                                className="object-contain w-[60%] h-[50%]"
+                                className="object-contain w-[50%] h-[50%]"
                             />
                     </div>
                 </div>
