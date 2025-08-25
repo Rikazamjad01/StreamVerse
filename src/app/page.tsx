@@ -1,4 +1,5 @@
 import Banner from "@/components/banner/Banner";
+import CTA from "@/components/cta/CTA";
 import DownloadApp from "@/components/downloadApp/DownloadApp";
 import Features from "@/components/features/Features";
 import Footer from "@/components/footer/Footer";
@@ -17,6 +18,7 @@ export default function Home() {
       <HowItWorks />
       <TestimonialCarousel />
       <PricingSection />
+      <CTA />
       <Footer />
     </div>
   );

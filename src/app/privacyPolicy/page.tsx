@@ -1,5 +1,8 @@
 "use client";
 
+import Footer from "@/components/footer/Footer";
+import Navbar from "../../components/navbar/Navbar";
+
 const data = [
   "Last updated: 2025-08-25",
   "This Privacy Policy explains how StreamVerse (the “Service”) and its mobile application, the StreamVERSE app (collectively “we”, “us”, or “our”), collect, use, disclose, and protect information when you visit our website, create an account, connect social platforms, or use our multi-streaming, analytics, and comment management features.",
@@ -34,31 +37,32 @@ const data = [
 
 function PrivacyPolicy() {
   return (
-    <div className="flex flex-col py-[5vh] px-4 bg-white">
-      <h4 className="text-lg md:text-xl text-black">
-        StreamVerse Privacy Policy
-      </h4>
-      <h1 className="mt-3 text-2xl md:text-3xl lg:text-4xl font-bold text-black">
-        Privacy Policy
-      </h1>
+    <div className="flex flex-col bg-white pt-2">
+      <Navbar/>
+      <div className="flex flex-col py-[5vh] px-4">
+        <h1 className="mt-3 text-2xl md:text-3xl lg:text-4xl font-bold text-black">
+          Privacy Policy
+        </h1>
 
-      <div className="w-full pt-6 md:pt-10 space-y-4">
-        {data.map((element, idx) => {
-          const isHeading = /^[A-Za-z0-9].*:$/.test(element) || element.match(/^(\d\)|Last updated)/);
-          return (
-            <p
-              key={idx}
-              className={`text-black leading-relaxed ${
-                isHeading
-                  ? "font-medium text-base md:text-lg"
-                  : "text-xs md:text-sm"
-              }`}
-            >
-              {element}
-            </p>
-          );
-        })}
+        <div className="w-full pt-6 space-y-4">
+          {data.map((element, idx) => {
+            const isHeading = /^[A-Za-z0-9].*:$/.test(element) || element.match(/^(\d\)|Last updated)/);
+            return (
+              <p
+                key={idx}
+                className={`text-black leading-relaxed ${
+                  isHeading
+                    ? "text-xs md:text-sm"
+                    : "text-xs md:text-sm"
+                }`}
+              >
+                {element}
+              </p>
+            );
+          })}
+        </div>
       </div>
+      <Footer />
     </div>
   );
 }

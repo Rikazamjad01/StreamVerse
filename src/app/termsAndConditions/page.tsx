@@ -1,5 +1,8 @@
 "use client";
 
+import Footer from "@/components/footer/Footer";
+import Navbar from "@/components/navbar/Navbar";
+
 const data = [
   `Last updated: 2025-08-25`,
   "Agreement to Terms",
@@ -57,34 +60,35 @@ const data = [
 
 function TermsAndConditions() {
   return (
-    <div className="flex flex-col py-[5vh] px-4 bg-white">
-      <h4 className="text-lg md:text-xl text-black">
-        StreamVerse Terms & Conditions
-      </h4>
-      <h1 className="mt-3 text-2xl md:text-3xl lg:text-4xl font-bold text-black">
-        Terms & Conditions
-      </h1>
+    <div className="flex flex-col bg-white pt-2">
+      <Navbar/>
+      <div className="flex flex-col py-[5vh] px-4">
+        <h1 className="mt-3 text-xl md:text-2xl lg:text-3xl font-bold text-black">
+          Terms & Conditions
+        </h1>
 
-      <div className="w-full pt-6 md:pt-10 space-y-4">
-        {data.map((element, idx) => {
-          const isHeading =
-            /^[A-Za-z].*$/.test(element) &&
-            !element.startsWith("•") &&
-            element === element.trim();
-          return (
-            <p
-              key={idx}
-              className={`text-black leading-relaxed ${
-                isHeading
-                  ? "font-medium text-base md:text-lg"
-                  : "text-xs md:text-sm"
-              }`}
-            >
-              {element}
-            </p>
-          );
-        })}
+        <div className="w-full pt-6 space-y-4">
+          {data.map((element, idx) => {
+            const isHeading =
+              /^[A-Za-z].*$/.test(element) &&
+              !element.startsWith("•") &&
+              element === element.trim();
+            return (
+              <p
+                key={idx}
+                className={`text-black leading-relaxed ${
+                  isHeading
+                    ? "text-xs md:text-sm"
+                    : "text-xs md:text-sm"
+                }`}
+              >
+                {element}
+              </p>
+            );
+          })}
+        </div>
       </div>
+      <Footer />
     </div>
   );
 }

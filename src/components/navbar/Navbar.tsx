@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Button from '../button/Button';
+import Link from 'next/link';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,10 +15,18 @@ const Navbar = () => {
                 </div>
                 <div>
                     <ul className='md:flex hidden lg:text-[18px] text-[16px] text-white'>
-                        <li className='py-3 lg:px-5 md:px-3 px-2 cursor-pointer hover:text-[var(--Primary)]'>Home</li>
-                        <li className='py-3 lg:px-5 md:px-3 px-2 cursor-pointer hover:text-[var(--Primary)]'>About us</li>
-                        <li className='py-3 lg:px-5 md:px-3 px-2 cursor-pointer hover:text-[var(--Primary)]'>How it Works</li>
-                        <li className='py-3 lg:px-5 md:px-3 px-2 cursor-pointer hover:text-[var(--Primary)]'>Contact us</li>
+                        <li className='py-3 lg:px-5 md:px-3 px-2 cursor-pointer hover:text-[var(--Primary)]'>
+                            <Link href={'/'}>Home</Link>
+                        </li>
+                        <li className='py-3 lg:px-5 md:px-3 px-2 cursor-pointer hover:text-[var(--Primary)]'>
+                            <Link href={'#features'}>About us</Link>
+                        </li>
+                        <li className='py-3 lg:px-5 md:px-3 px-2 cursor-pointer hover:text-[var(--Primary)]'>
+                            <Link href={'/howItWorks'}>How it Works</Link>
+                        </li>
+                        {/* <li className='py-3 lg:px-5 md:px-3 px-2 cursor-pointer hover:text-[var(--Primary)]'>
+                            <Link href={'contact'}>Contact us</Link>
+                        </li> */}
                     </ul>
                 </div>
                 <Button text="Download App" display='max-md:hidden flex' className='bg-[var(--Primary)] text-black w-[144px] md:w-[174px] lg:w-[214px]'/>

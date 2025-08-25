@@ -53,7 +53,7 @@ const keyFeatures = [
 
 const Features = () => {
     return (
-        <div className="max-w-[1200px] w-full mx-auto text-center sm:my-[100px] my-[50px] xl:px-0 px-4">
+        <div className="max-w-[1200px] w-full mx-auto text-center sm:my-[100px] my-[50px] xl:px-0 px-4" id='features'>
             <p style={{ fontSize: 'var(--H2-size)', fontWeight: 'var(--H3-weight)' }}>
                 Key Features
             </p>
