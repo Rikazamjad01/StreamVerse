@@ -11,7 +11,9 @@ const Navbar = () => {
         <>
             <div className='max-w-[1080px] mx-auto rounded-[20px] p-3 flex justify-between items-center font-[var(--font-poppins)] bg-[var(--Placeholder)] shadow-[inset_0_2px_2px_rgba(255,255,255,0.5),_0_9px_24px_rgba(0,0,0,0.25)]'>
                 <div className='cursor-pointer lg:text-[28px] md:text-[24px] sm:text-[20px] text-[18px]'>
-                    <p>Stream<span className='text-[var(--Primary)]' style={{ fontWeight: 'var(--H1-weight)' }}>VERSE</span></p>
+                    <Link href={'/'}>
+                        <p>Stream<span className='text-[var(--Primary)]' style={{ fontWeight: 'var(--H1-weight)' }}>VERSE</span></p>
+                    </Link>
                 </div>
                 <div>
                     <ul className='md:flex hidden lg:text-[18px] text-[16px] text-white'>
@@ -22,7 +24,7 @@ const Navbar = () => {
                             <Link href={'#features'}>About us</Link>
                         </li>
                         <li className='py-3 lg:px-5 md:px-3 px-2 cursor-pointer hover:text-[var(--Primary)]'>
-                            <Link href={'/howItWorks'}>How it Works</Link>
+                            <Link href={'#howItWorks'}>How it Works</Link>
                         </li>
                         {/* <li className='py-3 lg:px-5 md:px-3 px-2 cursor-pointer hover:text-[var(--Primary)]'>
                             <Link href={'contact'}>Contact us</Link>
