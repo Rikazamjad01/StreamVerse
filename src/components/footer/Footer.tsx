@@ -9,9 +9,9 @@ const footerSections = [
   {
     title: "QUICK LINKS",
     items: [
-      { label: "Home", href: "/" },
-      { label: "About us", href: "#features" },
-      { label: "How it works", href: "#howItWorks" },
+    //   { label: "Home", href: "/" },
+      { label: "About us", href: "/#features" },
+      { label: "How it works", href: "/#howItWorks" },
     //   { label: "Contact us", href: "contact" },
     ],
   },
@@ -43,7 +43,7 @@ const Footer = () => {
                                 <Image key={i} src={icon} alt={`icon-${i}`} width={24} height={24} className='cursor-pointer hover:scale-105 duration-300 transition'/>
                             ))}
                         </div>
-                        <p className="md:flex hidden text-[var(--Disable)] text-xs mt-10">© 2024 Solana Foundation. All rights reserved.</p>
+                        <p className="md:flex hidden text-[var(--Disable)] text-xs mt-10">© 2025 All rights reserved. Built by <Link href={"https://milestonezero.com/"}>MilestoneZero Technologies</Link></p>
                     </div>
 
                     <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-y-3 max-w-[684px] w-full">

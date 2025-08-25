@@ -2,40 +2,45 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
-const steps = [
-    {
-        id: '01',
-        title: 'Sign Up & Connect',
-        points: [
-        'Download the app and create an account',
-        'Link your social media platforms (YouTube, TikTok, Instagram, Facebook, BIGO)',
-        ],
-    },
-    {
-        id: '02',
-        title: 'Customize Stream',
-        points: [
-        'Choose where you want to go live (YouTube, TikTok, etc.)',
-        'Set your stream quality, title, description, and thumbnail',
-        ],
-    },
-    {
-        id: '03',
-        title: 'Go Live Instantly',
-        points: [
-        'Click "Go Live" and start broadcasting across multiple platforms',
-        'Manage comments, reactions, and viewer interactions in real-time from a single dashboard',
-        ],
-    },
-    {
-        id: '04',
-        title: 'Stream Insights',
-        points: [
-        'Check engagement and performance after streaming',
-        'Use insights to refine your content strategy for maximum reach and impact',
-        ],
-    },
-];
+    const steps = [
+        {
+            id: '01',
+            title: 'Sign Up & Connect',
+            points: [
+            'Download the app and create an account',
+            'Link your social media platforms (YouTube, TikTok, Instagram, Facebook, BIGO)',
+            ],
+            image: '/step1.png', 
+        },
+        {
+            id: '02',
+            title: 'Customize Stream',
+            points: [
+            'Choose where you want to go live (YouTube, TikTok, etc.)',
+            'Set your stream quality, title, description, and thumbnail',
+            ],
+            image: '/step2.png',
+        },
+        {
+            id: '03',
+            title: 'Go Live Instantly',
+            points: [
+            'Click "Go Live" and start broadcasting across multiple platforms',
+            'Manage comments, reactions, and viewer interactions in real-time from a single dashboard',
+            ],
+            image: '/step1.png',
+        },
+        {
+            id: '04',
+            title: 'Stream Insights',
+            points: [
+            'Check engagement and performance after streaming',
+            'Use insights to refine your content strategy for maximum reach and impact',
+            ],
+            image: '/step4.png',
+        },
+    ];
+
 
 export default function HowItWorks() {
     const [activeStep, setActiveStep] = useState(0);
@@ -94,13 +99,14 @@ export default function HowItWorks() {
 
                     {/* Right - Image */}
                     <div className="xl:w-[470px] lg:w-[420px] md:[350px] w-full flex justify-center">
-                        <Image
-                        src="/blurPhone.svg"
-                        alt="App preview"
-                        width={300}
-                        height={500}
-                        className="object-cover w-full h-full"
-                        />
+                          <Image
+                                key={steps[activeStep].image} 
+                                src={steps[activeStep].image}
+                                alt={steps[activeStep].title}
+                                width={300}
+                                height={500}
+                                className="object-contain w-[60%] h-[50%]"
+                            />
                     </div>
                 </div>
             </div>

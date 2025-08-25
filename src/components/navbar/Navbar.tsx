@@ -17,14 +17,14 @@ const Navbar = () => {
                 </div>
                 <div>
                     <ul className='md:flex hidden lg:text-[18px] text-[16px] text-white'>
-                        <li className='py-3 lg:px-5 md:px-3 px-2 cursor-pointer hover:text-[var(--Primary)]'>
+                        {/* <li className='py-3 lg:px-5 md:px-3 px-2 cursor-pointer hover:text-[var(--Primary)]'>
                             <Link href={'/'}>Home</Link>
+                        </li> */}
+                        <li className='py-3 lg:px-5 md:px-3 px-2 cursor-pointer hover:text-[var(--Primary)]'>
+                            <Link href={'/#features'}>About us</Link>
                         </li>
                         <li className='py-3 lg:px-5 md:px-3 px-2 cursor-pointer hover:text-[var(--Primary)]'>
-                            <Link href={'#features'}>About us</Link>
-                        </li>
-                        <li className='py-3 lg:px-5 md:px-3 px-2 cursor-pointer hover:text-[var(--Primary)]'>
-                            <Link href={'#howItWorks'}>How it Works</Link>
+                            <Link href={'/#howItWorks'}>How it Works</Link>
                         </li>
                         {/* <li className='py-3 lg:px-5 md:px-3 px-2 cursor-pointer hover:text-[var(--Primary)]'>
                             <Link href={'contact'}>Contact us</Link>
