@@ -15,21 +15,21 @@ const testimonials = [
         image: '/Sarah.svg',
         rating: 5,
         feedback:
-        'As a fitness coach, I need reliable streaming quality. FLOWLIVE delivers that and more with the ability to interact with comments from all platforms in one dashboard.',
+        'As a fitness coach, I need reliable streaming quality. Stream VERSE delivers that and more with the ability to interact with comments from all platforms in one dashboard.',
     },
     {
         name: 'John Doe',
         title: 'Marketing Lead at StreamCo',
         image: '/JohnDoe.jpg',
         rating: 4,
-        feedback: 'We increased engagement 3x after using FLOWLIVE. It\'s intuitive and powerful!',
+        feedback: 'We increased engagement 3x after using Stream VERSE. It\'s intuitive and powerful!',
     },
     {
         name: 'Emily Davis',
         title: 'Content Creator',
         image: '/Emily.jpg',
         rating: 5,
-        feedback: 'No more switching tabs! FLOWLIVE saved me hours every week.',
+        feedback: 'No more switching tabs! Stream VERSE saved me hours every week.',
     },
     {
         name: 'Jane Smith',
@@ -43,7 +43,7 @@ const testimonials = [
         title: 'Streamer',
         image: '/Michael.jpg',
         rating: 4,
-        feedback: 'FLOWLIVE took our team live events to a new level. Worth every penny.',
+        feedback: 'Stream VERSE took our team live events to a new level. Worth every penny.',
     },
 ];
 

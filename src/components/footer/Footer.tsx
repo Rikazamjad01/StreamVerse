@@ -3,16 +3,27 @@
 import Image from 'next/image';
 import React from 'react';
 import Button from '../button/Button';
+import Link from "next/link";
 
 const footerSections = [
-    {
-        title: 'QUICK LINKS',
-        items: ['Home', 'About us', 'How it works', 'Contact us'],
-    },
-    {
-        title: 'LEGAL',
-        items: ['Privacy Policy', 'Terms of Service', 'Cookie Policy', 'GDPR'],
-    },
+  {
+    title: "QUICK LINKS",
+    items: [
+      { label: "Home", href: "/" },
+      { label: "About us", href: "/about" },
+      { label: "How it works", href: "/how-it-works" },
+      { label: "Contact us", href: "contact" },
+    ],
+  },
+  {
+    title: "LEGAL",
+    items: [
+      { label: "Privacy Policy", href: "/privacyPolicy" },
+      { label: "Terms & Conditions", href: "/termsAndConditions" },
+      { label: "Cookie Policy", href: "/cookie-policy" },
+      { label: "GDPR", href: "/gdpr" },
+    ],
+  },
 ];
 
 const Footer = () => {
@@ -48,7 +59,7 @@ const Footer = () => {
                         <div className='cursor-pointer lg:text-[28px] md:text-[24px] sm:text-[20px] text-[18px]'>
                             <p>Stream<span className='text-[var(--Primary)]' style={{ fontWeight: 'var(--H1-weight)' }}>VERSE</span></p>
                         </div>
-                        <p className="md:text-[16px] text-[14px] max-w-[394px] w-full">Stream and share your life moments in real-time with FLOWLIVE.</p>
+                        <p className="md:text-[16px] text-[14px] max-w-[394px] w-full">Stream and share your life moments in real-time with Stream VERSE.</p>
                         <div className="md:flex hidden gap-[10px] mt-6">
                             {["/YouTube.svg", "/Twitter.svg", "/Discord.svg", "/Reddit.svg", "/GitHub.svg", "/Telegram.svg"].map((icon, i) => (
                                 <Image key={i} src={icon} alt={`icon-${i}`} width={24} height={24} className='cursor-pointer hover:scale-105 duration-300 transition'/>
@@ -63,11 +74,18 @@ const Footer = () => {
                                 <h4 className='text-[var(--Heading)] sm:mb-5 mb-2' style={{ fontSize: 'var(--P1-size)', fontWeight: 'var(--H3-weight)', color: 'var(--Heading)' }}>
                                     {section.title}
                                 </h4>
-                                <ul className='space-y-2 text-[var(--Paragraph)] sm:text-[16px] text-[14px]'>
-                                    {section.items.map((item, idx) => (
-                                        <li key={idx} className='hover:text-[var(--Primary)] cursor-pointer'>{item}</li>
-                                    ))}
-                                </ul> 
+                                <ul className="space-y-2 text-[var(--Paragraph)] sm:text-[16px] text-[14px]">
+                                {section.items.map((item, idx) => (
+                                    <li key={idx}>
+                                    <Link
+                                        href={item.href}
+                                        className="hover:text-[var(--Primary)] cursor-pointer transition-colors duration-200"
+                                    >
+                                        {item.label}
+                                    </Link >
+                                    </li>
+                                ))}
+                                </ul>
                             </div>
                         ))}
 
@@ -75,7 +93,7 @@ const Footer = () => {
                         <div className='flex flex-col justify-between gap-4'>
                             <div>
                                 <h4 className="text-[var(--Heading)] font-semibold md:mb-5 mb-2">DOWNLOAD</h4>
-                                <p className=" text-[var(--Paragraph)] text-sm">Get the FLOWLIVE app now and start streaming!</p>
+                                <p className=" text-[var(--Paragraph)] text-sm">Get the Stream VERSE app now and start streaming!</p>
                             </div>
                             <Button text="Download App" className="bg-[var(--Primary)] text-black w-[150px] md:w-[170px] lg:w-[228px]" />
                         </div>
